@@ -74,7 +74,7 @@ limitations under the License.
 </div>
 
 <div class="btn-group"
-     ng-if="(type == 'TABLE' || type == 'NETWORK') && !asIframe && !viewOnly"
+     ng-if="(type == 'TABLE' || type == 'NETWORK') && !asIframe && !viewOnly && $root.ticket.roles.includes('admin')"
      style="margin-bottom: 10px;">
   <button type="button" class="btn btn-default btn-sm"
           style="margin-left:10px"
